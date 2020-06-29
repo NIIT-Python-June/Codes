@@ -1,0 +1,14 @@
+'''
+Q. Write a Python script to create a dictionary where the keys are numbers between 1 and 15 and the values are square of the keys.
+Now, add a new Key {100:10000} to this dictionary.
+'''
+len = int(input('Enter length: '))
+dict = {}
+
+for i in range (len):
+    dict [(i+1)] = (i+1)**2
+
+print (dict)
+
+dict[100] = 10000
+print (dict)

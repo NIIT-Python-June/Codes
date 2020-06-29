@@ -1,0 +1,23 @@
+'''
+Q. Write a Python program that takes two digits m (row) and n (column) as input and generates a two-dimensional array.
+The element value in the i-th row and j-th column of the array should be i*j. For example, when m=3 and n=4.
+0	0	0	0
+0	1	2	3
+0	2	4	6
+
+'''
+ro = int(input('Enter no of rows: '))
+co = int(input('Enter no of columns: '))
+
+lst = []
+lst1 = []
+
+for i in range (ro):
+    lst = []
+    for j in range (co):
+        lst.append (i*j)
+    lst1.append(lst)
+
+i = 0
+for i in range (ro):
+    print (lst1 [i])

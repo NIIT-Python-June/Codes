@@ -1,0 +1,9 @@
+# Q. Write a program to get a string from the user and sort the words of the string in alphabetic order.
+
+st01 = input('Enter a Sentence :')
+print (st01)
+
+lst01 = st01.split(' ')
+print (lst01)
+lst01.sort()
+print (lst01)

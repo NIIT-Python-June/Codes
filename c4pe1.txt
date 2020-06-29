@@ -1,0 +1,31 @@
+'''
+Q. Write a Python program to let the user input a list of numbers and then print the smallest and the largest numbers from this list.
+Get the smallest number.
+Get the largest number.
+'''
+
+len = int(input('Enter the length of the list: '))
+# print (len)
+
+lst = []
+# print (lst)
+
+for i in range (len):
+#     print (i)
+    value = int(input('Enter value # %d: ' %(i+1)))
+#     print (value)
+    lst.append(value)
+#     print (lst)
+
+print (lst)
+
+sm = lst[0]
+bi = lst[0]
+
+for i in lst:
+    if i < sm:
+        sm = i
+    if i > bi:
+        bi = i
+print ('Smallest number is: ', sm)
+print ('Biggest number is: ', bi)

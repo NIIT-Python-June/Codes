@@ -1,0 +1,51 @@
+'''
+Q. Write a Python program to
+Input two comma-separated lists by the user.
+Append two elements to both the lists using append.
+Concatenate the elements of the two lists using extend.
+Insert a user-entered string at the beginning of all items in the two lists.
+'''
+len1 = int(input('Enter the length of the first list: '))
+lst1 = []
+i = 0
+val = 0
+
+for i in range (len1):
+    val = input('Enter value # %d: ' %(i+1))
+    lst1.append(val)
+
+len2 = int(input('Enter the length of the second list: '))
+lst2 = []
+i = 0
+val = 0
+
+for i in range (len2):
+    val = input('Enter value # %d: ' %(i+1))
+    lst2.append(val)
+
+print (lst1)
+print (lst2)
+
+ap1 = input ('Enter first ammendment: ')
+ap2 = input ('Enter first ammendment: ')
+
+lst1.append(ap1)
+lst1.append(ap2)
+
+lst2.append(ap1)
+lst2.append(ap2)
+
+print (lst1)
+print (lst2)
+
+lst3 = lst1
+lst3.extend(lst2)
+print (lst3)
+
+ins1 = input ('Enter string to insert: ')
+
+lst1.insert (0, ins1)
+lst2.insert (0, ins1)
+
+print (lst1)
+print (lst2)

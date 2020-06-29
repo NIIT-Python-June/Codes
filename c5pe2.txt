@@ -1,0 +1,13 @@
+'''Q. Write a Python program to create a dictionary from the following table and get the keys with maximum and minimum worth.
+item1	45.50
+item2	35
+item3	41.30
+item4	Framework
+item5	Analogies
+'''
+dict = {'item1': 45.50, 'item2': 35, 'item3': 41.30, 'item4': 'Framework', 'item5': 'Analogies' }
+
+print (dict)
+
+print (max(dict))
+print (min(dict))

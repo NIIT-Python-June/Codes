@@ -1,0 +1,43 @@
+'''
+Q. Write a Python program to display the number of days in a month name from the given list of months or month number entered by the user.
+'''
+
+mo = input ('Enter month: ')
+m = mo.lower()
+
+if mo.isalpha() == False:
+    m = int(m)
+
+else:
+    if m == 'january':
+        m = 1
+    elif m == 'february':
+        m = 2
+    elif m == 'march':
+        m = 3
+    elif m == 'april':
+        m = 4
+    elif m == 'may':
+        m = 5
+    elif m == 'june':
+        m = 6
+    elif m == 'july':
+        m = 7
+    elif m == 'august':
+        m = 8
+    elif m == 'september':
+        m = 9
+    elif m == 'october':
+        m = 10
+    elif m == 'november':
+        m = 11
+    elif m == 'december':
+        m = 12
+
+if m == 4 or m == 6 or m == 9 or m == 11:
+    d = 30
+elif m == 2:
+    d = 28
+else: d = 31
+
+print ('No of days in month', mo, 'is', d)

@@ -1,0 +1,10 @@
+'''
+Q. Write a Python program to execute a string containing a Python code containing a function for adding two numbers entered by the user.
+
+'''
+def add (a,b):
+    return a+b
+
+a = int (input('Enter first no.: '))
+b = int (input('Enter second no.: '))
+print ('a + b = ', add (a,b))

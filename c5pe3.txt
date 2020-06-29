@@ -1,0 +1,15 @@
+'''Q. Write a Python program to create a dictionary of the following items and remove duplicates from the dictionary.
+Sara	IT	    Team Lead	                IOT, AI, DA
+Anna	IT	    Senior Software Engineer	IOT, AI
+Anil	BioTech	Senior Software Engineer	IOT, AI, DA
+Anil	BioTech	Senior Software Engineer	IOT, AI, DA
+'''
+dict1 = {'Sara':'IT Team Lead','Anna':'IT Senior Software Engineer','Anil':'BioTech Senior Software Engineer','Anil':'BioTech Senior Software Engineer',}
+
+dict2 = {}
+
+for key,value in dict1.items():
+    if value not in dict2.values():
+        dict2[key] = value
+
+print (dict2)

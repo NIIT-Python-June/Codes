@@ -1,0 +1,9 @@
+# Q. Write a program that adds two tuples.
+
+t1 = ('one', 'two', 'three', 'four', 'five')
+print (t1)
+t2 = (1, 2, 3, 4, 5)
+print (t2)
+
+t3 = t1 + t2
+print (t3)

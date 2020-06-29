@@ -1,0 +1,17 @@
+'''
+Q. Use the dictionary
+port1 = {21: 'FTP', 22:'SSH', 23: 'telnet', 80: 'http'}
+and make a new dictionary in which keys become values and values become keys, as shown:
+Port2 = {'FTP':21, 'SSH':22, 'telnet':23, 'http': 80}
+
+'''
+port1 = {21: 'FTP', 22:'SSH', 23: 'telnet', 80: 'http'}
+port2 = {}
+
+for key in port1:
+    print (key)
+    print (port1.get(key))
+    port2 [port1.get(key)] = key
+
+print (port1)
+print (port2)
